@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    overflow: auto;
+    
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcff75;
+    padding: 10px 20px;
+
+    .logoArea img {
+        height: 50px;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fcb733;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        width: 180px;
+        height: 50px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .menu a:hover {
+        background-color: #f8a60e;
+    }
+}
+
+main{
+    padding-top: 90px;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(Background.png);
+}
+
+.informacoes{
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.informacoes h1{
+    font-family: Cousine;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.informacoes p{
+    font-family: Cousine;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.rodape {
+    background-color: #fcff75;
+    align-items: center;
+
+    .direitos {
+        background-color: #f8a60e;
+        text-align: center;
+        font-size: 10pt;
+    }
+}
+
+.rodape_itens {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    /* Alinhamento dos itens */
+    .seguir,
+    .pedido,
+    .localizacao,
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo {
+        margin-bottom: 1rem;
+        font-size: 15pt;
+    }
+
+    .endereco,
+    .numero {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    img {
+        padding: 0 10px 0 0;
+    }
+}
+
+.menuHamburger {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    
+    .header {
+        justify-content: space-between;
+
+        .menu {
+            display: none;
+        }
+    }
+
+    .menuHamburger {
+        display: block;
+    }
+
+    .principal{
+        flex-direction: column-reverse;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
+    .rodape_itens {
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        img {
+            width: 40px;
+        }
+    }
+
+    .titulo {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    
+
+    .rodape_itens {
+        img {
+            width: 30px;
+        }
+    }
+}

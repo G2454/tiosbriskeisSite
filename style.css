@@ -1,0 +1,528 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background-image: url("./Imagens/Fundo1.png");
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-repeat: no-repeat; /* Avoid repetition */
+  background-attachment: fixed; /* Keep the background fixed */
+  background-position: center; /* Center the background image */
+}
+
+.no-style-link {
+  color: inherit; /* Inherits the color from the parent element */
+  text-decoration: none; /* Removes the underline */
+  /*display: inline-block; /* Makes the link behave more like a button */
+  width: 100%; /* Ensures the link takes up the full width of the button */
+  height: 100%; /* Ensures the link takes up the full height of the button */
+  /*padding: inherit; /* Inherits padding from the button */
+}
+.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcb733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 180px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.menu a:hover {
+  background-color: #f8a60e;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(252, 255, 117, 0.9);
+  padding: 10px 20px;
+}
+
+.logoArea img {
+  height: 50px;
+}
+
+.menu {
+  margin-right: 100px;
+}
+
+.menu button {
+  background-color: #fcb733;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  width: 180px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 2; /* Ensure buttons are clickable */
+}
+
+.menu button:hover {
+  background-color: #926106b0;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Make sure content stays above the background */
+  width: 100%;
+  padding: 50px 0;
+}
+
+.sorvete-description {
+  width: 350px;
+  height: auto;
+  margin-left: 280px;
+}
+
+.welcome {
+  padding: 50px;
+  margin-top: -40px;
+}
+
+.text-box {
+  font-family: "Cousine", monospace;
+  color: #333;
+  padding: 20px;
+  max-width: 80%;
+  margin-right: 20px;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  margin-top: -100px;
+  margin-bottom: -50px;
+  width: 100%;
+  margin-left: 90px;
+}
+
+.welcome-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-left: 100px;
+}
+
+.title-area {
+  margin-top: 100px;
+  font-family: "Cousine", monospace;
+  color: #333;
+}
+
+.cardapio-title {
+  font-family: "Cousine", monospace;
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-area button {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 400px;
+  margin: 0 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effects */
+}
+.button-area button:hover {
+  transform: scale(1.05); /* Slightly increase the size */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a popping effect */
+}
+
+.button-area button img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.welcome-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically centered */
+}
+
+.cardapio-area {
+  margin-top: -100px;
+}
+
+.Sobre-nos-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: -30px;
+}
+
+.sobre-nos-description-text {
+  width: 50%;
+  margin-left: 80px;
+}
+
+.logo2 {
+  width: 400px;
+  margin-left: 150px;
+}
+
+.title-sobre-nos {
+  margin-bottom: -30px;
+  margin-left: 100px;
+}
+
+.sobre-nos-title {
+  font-family: "Cousine", monospace;
+  color: #333;
+  font-size: 2rem;
+}
+
+.sobre-nos-description-text {
+  font-family: "Cousine", monospace;
+  color: #333;
+  max-width: 50%;
+  margin-right: 5px;
+  font-size: 1.4rem;
+}
+
+.rodape {
+  background-color: #fcff75;
+  align-items: center;
+
+  .direitos {
+    background-color: #f8a60e;
+    text-align: center;
+    font-size: 10pt;
+  }
+}
+
+.rodape_itens {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  padding: 10px 20px;
+  overflow-x: hidden;
+
+  /* Alinhamento dos itens */
+  .seguir,
+  .pedido,
+  .localizacao,
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo {
+    margin-bottom: 1rem;
+    font-size: 15pt;
+  }
+
+  .endereco,
+  .numero {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  img {
+    padding: 0 10px 0 0;
+  }
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(252, 255, 117, 0.9);
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2; /* Ensure it's above other content */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Make sure content stays above the background */
+  width: 100%;
+  padding: 50px 0;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #930d0d;
+  background-color: #f8a60e;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dropdown-menu.active {
+  display: flex;
+}
+
+.dropdown-menu button:hover {
+  background-color: #fcb733; /* Change to the desired hover color */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover button {
+  background-color: #926106b0; /* Change button background color when hovering over the menu */
+}
+
+.button-saiba-mais {
+  width: 200px;
+  height: 50px;
+  background-color: #fcb733;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
+  margin-bottom: 100px;
+  margin-left: 80px;
+}
+
+.button-saiba-mais:hover {
+  background-color: #bd8419b0; /* Change button background color on hover */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Media Query for small screens */
+@media screen and (max-width: 1150px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .logoArea {
+    margin-left: 20px;
+  }
+
+  .dropdown-menu button {
+    padding: 10px 0;
+  }
+  .welcome-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 50px;
+    width: auto;
+  }
+  .text-box {
+    font-family: "Cousine", monospace;
+    color: #333;
+    margin-left: -50px;
+  }
+  .welcome-text {
+    font-size: 2rem;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .sorvete-description {
+    width: 300px;
+    height: auto;
+    margin-left: 280px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .welcome-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 50px;
+    width: auto;
+  }
+  .text-box {
+    font-family: "Cousine", monospace;
+    color: #333;
+    margin-left: -50px;
+  }
+  .welcome-text {
+    font-size: 1.6rem;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .sorvete-description {
+    width: 260px;
+    height: auto;
+    margin-left: 280px;
+    margin-top: 50px;
+  }
+  .logo2 {
+    width: 360px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .welcome-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 80px;
+    width: auto;
+    margin-top: 80px;
+  }
+  .text-box {
+    font-family: "Cousine", monospace;
+    color: #333;
+    margin-left: -50px;
+  }
+  .welcome-text {
+    font-size: 1.6rem;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    width: 100%;
+    margin-left: 40px;
+  }
+  .logo2 {
+    width: 300px;
+    margin-left: 100px;
+  }
+  .Sobre-nos-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .welcome-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-top: 80px;
+    width: auto;
+    margin-top: 80px;
+  }
+  .text-box {
+    font-family: "Cousine", monospace;
+    color: #333;
+    margin-left: -90px;
+  }
+  .welcome-text {
+    font-size: 1.6rem;
+    margin-top: -100px;
+    margin-bottom: -120px;
+    width: 100%;
+  }
+  .sorvete-description {
+    width: 220px;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .welcome-description {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-top: 10px;
+    margin-left: -40px;
+    width: auto;
+  }
+  .text-box {
+    font-family: "Cousine", monospace;
+    color: #333;
+    margin-left: -60px;
+    margin-top: 50px;
+  }
+  .welcome-text {
+    font-size: 1.4rem;
+    margin-top: -100px;
+    margin-bottom: -80px;
+    width: 100%;
+    margin-left: -90px;
+  }
+  .welcome {
+    margin-left: 100px;
+  }
+  .sorvete-description {
+    width: 180px;
+    height: auto;
+    margin-left: 280px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .welcome-description {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    margin-top: 50px;
+    margin-left: -60px;
+    width: auto;
+  }
+  .text-box {
+    font-family: "Cousine", monospace;
+    color: #333;
+    margin-left: -60px;
+    margin-top: 50px;
+  }
+  .welcome-text {
+    font-size: 1.4rem;
+    margin-top: -100px;
+    margin-bottom: -80px;
+    width: 100%;
+    margin-left: -90px;
+  }
+  .welcome {
+    margin-left: 100px;
+  }
+  .sorvete-description {
+    width: 120px;
+    height: auto;
+    margin-left: 280px;
+    margin-top: 50px;
+  }
+  .sobre-nos-description-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for mobile phones */
+}
